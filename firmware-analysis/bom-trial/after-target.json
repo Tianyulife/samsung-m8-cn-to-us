@@ -1,0 +1,30 @@
+{
+  "phase": "after-target",
+  "size": 65536,
+  "sha256": "8df166ee067a8563dcf4dafad7461b29b5fa29c28ee84855a270c62da40ca479",
+  "bom": "LS32BM80BUNXGO",
+  "changes": [
+    {
+      "offset": "0xf32b",
+      "before": 67,
+      "after": 78
+    },
+    {
+      "offset": "0xf32d",
+      "before": 88,
+      "after": 71
+    },
+    {
+      "offset": "0xf32e",
+      "before": 70,
+      "after": 79
+    }
+  ],
+  "outside_bom_record_changes": 0,
+  "network": {
+    "modelName": "LS32BM80BUCXXF",
+    "model": "22_PONTUSM_SMT",
+    "type": "Samsung SmartTV",
+    "OS": "Tizen"
+  }
+}

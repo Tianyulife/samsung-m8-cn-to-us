@@ -1,0 +1,1 @@
+["gdbus call --system --dest comss.server --object-path /comss/server --method comss.server.interface.comss_get_countrylist", "base64 /usr/apps/comss/bin/comss", "base64 /usr/lib/libcomss-api.so"]

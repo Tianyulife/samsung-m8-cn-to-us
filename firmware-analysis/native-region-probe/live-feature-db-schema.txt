@@ -1,0 +1,6 @@
+ls: cannot access /opt/data/fconfig/fconfig.db: Permission denied
+drwxrwx--- 1 root root 4 1970-01-01 08:00 /opt/data/fconfig
+Error: unable to open database "/opt/data/fconfig/fconfig.db": unable to open database file
+db/comss/countrycode, value = CN (String)
+
+[exit:0]

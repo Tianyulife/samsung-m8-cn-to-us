@@ -1,0 +1,41 @@
+((76, 63), (1,))
+INDEX=5
+(('',), (0,))
+INDEX=6
+(('',), (0,))
+INDEX=7
+(('',), (0,))
+INDEX=60
+(('',), (0,))
+INDEX=61
+(('',), (0,))
+INDEX=62
+(('',), (0,))
+INDEX=63
+(('CHI_DTV',), (1,))
+INDEX=66
+(('',), (0,))
+INDEX=67
+(('',), (0,))
+INDEX=68
+(('',), (0,))
+INDEX=69
+(('',), (0,))
+INDEX=70
+(('',), (0,))
+INDEX=71
+(('',), (0,))
+INDEX=72
+(('',), (0,))
+INDEX=73
+(('',), (0,))
+INDEX=74
+(('',), (0,))
+INDEX=75
+(('',), (0,))
+INDEX=76
+(('',), (0,))
+((0, 0, 0, 0, 0, byte 0x00, '', ''), (0,))
+Error: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method GetUidItem is not implemented on interface org.tizen.tv.factoryservice
+
+[exit:1]

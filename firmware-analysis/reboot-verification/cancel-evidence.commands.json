@@ -1,0 +1,10 @@
+[
+  {
+    "command": "systemctl stop m8-reboot-verification.timer m8-reboot-verification.service; systemctl is-active m8-reboot-verification.timer; systemctl status m8-reboot-verification.service --no-pager; systemctl list-jobs --no-pager",
+    "sequence": 2,
+    "exit_code": 0,
+    "timed_out": false,
+    "stdout": "inactive\n● m8-reboot-verification.service - /usr/bin/systemctl reboot\n     Loaded: loaded (/run/systemd/transient/m8-reboot-verification.service; transient)\n  Transient: yes\n     Active: failed (Result: exit-code) since Thu 2026-10-22 01:35:21 CST; 1min 8s ago\n    Process: 4686 ExecStart=/usr/bin/systemctl reboot (code=exited, status=5)\n   Main PID: 4686 (code=exited, status=5)\nNo jobs running.\n",
+    "stderr": ""
+  }
+]

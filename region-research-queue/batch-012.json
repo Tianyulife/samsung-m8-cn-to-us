@@ -1,0 +1,1 @@
+["for k in db/comss/gpmurl/apps db/comss/gpmurl/geo db/comss/gpmurl/eden db/comss/gpmurl/configproperties db/comss/gpmurl/sso db/comss/modelid db/comss/cisblock; do vconftool get \"$k\" | sed 's/?[^ ]*/?[query-redacted]/g'; done", "journalctl -u comss.service --since '-3 min' --no-pager -n 10 2>&1 | head -15"]

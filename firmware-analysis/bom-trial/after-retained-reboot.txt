@@ -1,0 +1,23 @@
+BOOT_ID
+63e0f0a4-6e60-489c-9e36-edddbe166238
+UPTIME
+125.94 204.11
+BOM=LS32BM80BUNXGO
+SHORT_MODEL=M80B
+FACTORY_MODEL rc=1 value=957
+LOCAL_SET rc=1 value=1
+PREVENT_IMPORT rc=1 value=0
+FACTORY_STRING uid=0x238f rc=1 length=4 value=M80B
+FACTORY_STRING uid=0x2392 rc=1 length=14 value=LS32BM80BUNXGO
+SYSTEM_INFO key=0x0 rc=0 value=M80B
+SYSTEM_INFO key=0x80 rc=0 value=T-PTMWWC-1720.7
+SYSTEM_INFO key=0x124 rc=0 value=LS32BM80BUNXGO
+BOM_MODEL rc=1 length=14 value=LS32BM80BUNXGO
+SYSTEM_MODEL rc=0 value=LS32BM80BUNXGO
+was.before rc=0 value=0
+db/comss/countrycode, value = US (String)
+rtc/db/comss/gpmurl/sastv, value = https://osb-auth-v2.samsungqbe.com (String)
+rtc/db/comss/gpmurl/idm, value = https://osb-secure-v2.samsungqbe.com (String)
+RETAIN_AND_CANCEL_MARKERS_PRESENT
+
+[exit:0]

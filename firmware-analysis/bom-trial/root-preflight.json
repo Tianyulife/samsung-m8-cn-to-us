@@ -1,0 +1,24 @@
+{
+  "model": "LS32BM80BUCXXF",
+  "host": "192.168.100.104",
+  "runtime": "3.1",
+  "authenticated": true,
+  "uid": 0,
+  "euid": 0,
+  "gid": 0,
+  "egid": 0,
+  "cap_eff": "0000003fffffffff",
+  "smack": "User",
+  "preflight_capabilities": "/usr/bin/dotnet = cap_setgid,cap_sys_admin+ei\n/usr/sbin/sdbd-tarlauncher = cap_setgid,cap_setuid+eip",
+  "commands": [
+    {
+      "command": "id; grep -E '^(Uid|Gid|CapEff):' /proc/self/status; sha256sum /usr/lib/libfactory-interface-WW.so; /usr/bin/dotnet /home/owner/share/tmp/sdk_tools/m8-model-read/ModelIdentity.dll",
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "uid=0(owner) gid=0(root) groups=0(root),29(audio),44(video),201(display),1901(log),6509(app_logging),6525(usb_device),10001(priv_externalstorage),10002(priv_externalstorage_appdata),10013(priv_tee_client),10014(priv_peripheralio),10212(priv_platform),10501(priv_camera),10502(priv_mediastorage),10503(priv_recorder),10704(priv_internet),10705(priv_network_get),10711(priv_tethering_admin),10901(priv_email),10903(priv_message_read),11103(priv_mapservice),11201(priv_appdebugging) context=\"User\"\nUid:\t0\t0\t0\t0\nGid:\t0\t0\t0\t0\nCapEff:\t0000003fffffffff\nbe719e56b94d71f9f895951d1407b92154d4c0604f784a3d4d95ee97e124f08d  /usr/lib/libfactory-interface-WW.so\nFACTORY_STRING uid=0x238f rc=1 length=4 value=M80B\nFACTORY_STRING uid=0x2392 rc=1 length=14 value=LS32BM80BUCXXF\nSYSTEM_INFO key=0x0 rc=0 value=M80B\nSYSTEM_INFO key=0x80 rc=0 value=T-PTMWWC-1720.7\nSYSTEM_INFO key=0x124 rc=0 value=LS32BM80BUCXXF\nBOM_MODEL rc=1 length=14 value=LS32BM80BUCXXF\nSYSTEM_MODEL rc=0 value=LS32BM80BUCXXF\n",
+      "stderr": ""
+    }
+  ],
+  "system_files_unchanged": true,
+  "staging_cleaned": true
+}

@@ -1,0 +1,14 @@
+{
+  "phase": "after-restore",
+  "size": 65536,
+  "sha256": "9288924e4b4f29ec0345bcf15fabd06bfc61eeee9fcd245bec661ba340035cdb",
+  "bom": "LS32BM80BUCXXF",
+  "changes": [],
+  "outside_bom_record_changes": 0,
+  "network": {
+    "modelName": "LS32BM80BUCXXF",
+    "model": "22_PONTUSM_SMT",
+    "type": "Samsung SmartTV",
+    "OS": "Tizen"
+  }
+}

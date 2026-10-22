@@ -1,0 +1,10 @@
+system_info[0x7532] rc=-22 value=<unavailable>
+product.product_type rc=0 value=0
+was.use_china_server rc=0 value=1
+pdss.use_china_server rc=0 value=1
+account.use_china_server rc=0 value=1
+homedatacontrolservice.use_china_server rc=0 value=1
+security.fkp.use_china_server rc=0 value=1
+http://tizen.org/system/model_name rc=0 value=LS32BM80BUCXXF
+
+[exit:0]

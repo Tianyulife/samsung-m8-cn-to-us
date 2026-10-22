@@ -1,0 +1,9 @@
+   1ad5c: f8df 2658    	ldr.w	r2, [pc, #0x658]        @ 0x1b3b8 <_ZN12ICSystemInfo13GetSystemInfoER13_PRODUCT_INFO+0x724>
+   1ad60: 447b         	add	r3, pc
+   1ad62: 447a         	add	r2, pc
+   1ad64: f7f2 eafc    	blx	0xd360 <__dlog_print@plt> @ imm = #-0xda08
+   1ad68: f104 0264    	add.w	r2, r4, #0x64
+   1ad6c: f44f 7192    	mov.w	r1, #0x124
+   1ad70: 4628         	mov	r0, r5
+   1ad72: f7ff fcdd    	bl	0x1a730 <_ZN12ICSystemInfo19GetSystemInfoByTypeE17system_info_key_eRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE> @ imm = #-0x646
+   1ad76: 4607         	mov	r7, r0

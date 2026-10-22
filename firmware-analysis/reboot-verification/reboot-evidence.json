@@ -1,0 +1,24 @@
+{
+  "model": "LS32BM80BUCXXF",
+  "host": "192.168.100.104",
+  "runtime": "3.1",
+  "authenticated": true,
+  "uid": 0,
+  "euid": 0,
+  "gid": 0,
+  "egid": 0,
+  "cap_eff": "0000003fffffffff",
+  "smack": "User",
+  "preflight_capabilities": "/usr/bin/dotnet = cap_setgid,cap_sys_admin+ei\n/usr/sbin/sdbd-tarlauncher = cap_setgid,cap_setuid+eip",
+  "commands": [
+    {
+      "command": "set -e; test -f /home/owner/share/tmp/sdk_tools/m8-region-trial/keep-us; test -f /home/owner/share/tmp/sdk_tools/m8-localset-trial/keep-localset; test -f /home/owner/share/tmp/sdk_tools/m8-import-trial/keep-import; echo PRE_REBOOT; cat /proc/sys/kernel/random/boot_id; /usr/bin/dotnet /home/owner/share/tmp/sdk_tools/m8-import-trial/ImportTrial.dll read; sqlite3 -readonly -line /opt/data/fconfig/fconfig.db \"SELECT * FROM fc_table WHERE key='com.samsung/featureconf/was.use_china_server';\"; /usr/bin/systemd-run --unit=m8-reboot-verification --on-active=90s /usr/bin/systemctl reboot; /usr/bin/systemctl list-timers m8-reboot-verification.timer --no-pager; echo REBOOT_SCHEDULED",
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "PRE_REBOOT\n47cd41dd-8faa-4a64-9180-3402c12237df\nLocalSet uid194 rc=1 value=1\nPreventingImport uid761 rc=1 value=0\nLocalSet enum rc=1 value=1\n  key = com.samsung/featureconf/was.use_china_server\n type = Boolean\n    0 = false\n    1 = false\n    2 = false\n    3 = false\n    4 = false\n    6 = false\n    7 = false\n    8 = false\n    9 = false\n   10 = false\n   11 = false\n   12 = false\n   13 = false\n   14 = false\n   15 = false\n   16 = false\n   17 = false\n   18 = false\n   19 = false\n   20 = false\n   21 = false\n   23 = false\n   24 = false\n   25 = false\n   26 = false\n   27 = false\n   28 = false\n   29 = false\n   30 = false\n   31 = false\n   32 = false\n   33 = false\n   34 = false\n   35 = false\n   36 = false\n   37 = false\n   38 = false\n   39 = false\n   40 = false\n   41 = false\n   42 = false\n   43 = false\n   44 = false\n   45 = false\n   46 = false\n   47 = false\n   48 = false\n   49 = false\n   50 = false\n   51 = false\n   52 = false\n   53 = false\n   54 = false\n   55 = false\n   56 = false\n   57 = false\n   58 = false\n   59 = false\n   60 = false\n   61 = false\n   62 = false\n   63 = false\n   64 = false\n   65 = FALSE\n   66 = false\n   67 = false\n   69 = false\n   70 = false\n   71 = false\n   72 = false\n   73 = false\n   74 = false\n   75 = false\n   76 = false\n   95 = false\n   96 = false\n   97 = false\nNEXT                         LEFT          LAST PASSED UNIT                         ACTIVATES\nThu 2026-10-22 01:35:12 CST  1min 29s left n/a  n/a    m8-reboot-verification.timer m8-reboot-verification.service\n\n1 timers listed.\nPass --all to see loaded but inactive timers, too.\nREBOOT_SCHEDULED\n",
+      "stderr": "Running timer as unit: m8-reboot-verification.timer\nWill run service as unit: m8-reboot-verification.service\n"
+    }
+  ],
+  "system_files_unchanged": true,
+  "staging_cleaned": true
+}

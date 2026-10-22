@@ -1,0 +1,6 @@
+db/menu/support/softwareupdate/upgrade_version, value =  (String)
+db/menu/support/softwareupdate/upgrade_verified_successfully, value = 0 (Int32)
+db/menu/support/softwareupdate/upgrade_verified_successfully_int, value = 0 (Int32)
+AUTO_ROLLBACK_CANCELLED_BY_MARKER
+
+[exit:0]

@@ -1,0 +1,64 @@
+   148ec: f101 0222    	add.w	r2, r1, #0x22
+   148f0: f7f9 fcd2    	bl	0xe298 <.text+0x2200>   @ imm = #-0x665c
+   148f4: 9819         	ldr	r0, [sp, #0x64]
+   148f6: 4669         	mov	r1, sp
+   148f8: 2300         	movs	r3, #0x0
+   148fa: ad15         	add	r5, sp, #0x54
+   148fc: f88d 3054    	strb.w	r3, [sp, #0x54]
+   14900: e9cd 5313    	strd	r5, r3, [sp, #76]
+   14904: 9300         	str	r3, [sp]
+   14906: f7f7 eb2c    	blx	0xbf60 <system_info_get_platform_string@plt> @ imm = #-0x89a8
+   1490a: b9d0         	cbnz	r0, 0x14942 <.text+0x88aa> @ imm = #0x34
+   1490c: f8dd a000    	ldr.w	r10, [sp]
+
+   463ac: f101 0222    	add.w	r2, r1, #0x22
+   463b0: f7c7 ff72    	bl	0xe298 <.text+0x2200>   @ imm = #-0x3811c
+   463b4: 981b         	ldr	r0, [sp, #0x6c]
+   463b6: 4669         	mov	r1, sp
+   463b8: 2300         	movs	r3, #0x0
+   463ba: f10d 095c    	add.w	r9, sp, #0x5c
+   463be: f88d 305c    	strb.w	r3, [sp, #0x5c]
+   463c2: e9cd 9315    	strd	r9, r3, [sp, #84]
+   463c6: 9300         	str	r3, [sp]
+   463c8: f7c5 edca    	blx	0xbf60 <system_info_get_platform_string@plt> @ imm = #-0x3a46c
+   463cc: b9d0         	cbnz	r0, 0x46404 <.text+0x3a36c> @ imm = #0x34
+   463ce: f8dd a000    	ldr.w	r10, [sp]
+
+   5a63a: 4b08         	ldr	r3, [pc, #0x20]         @ 0x5a65c <.text+0x4e5c4>
+   5a63c: 447a         	add	r2, pc
+   5a63e: 58d3         	ldr	r3, [r2, r3]
+   5a640: 681a         	ldr	r2, [r3]
+   5a642: 9b01         	ldr	r3, [sp, #0x4]
+   5a644: 405a         	eors	r2, r3
+   5a646: d104         	bne	0x5a652 <.text+0x4e5ba> @ imm = #0x8
+   5a648: b003         	add	sp, #0xc
+   5a64a: f85d eb04    	ldr	lr, [sp], #4
+   5a64e: f7b1 bc8d    	b.w	0xbf6c <system_info_get_platform_string@plt+0xc> @ imm = #-0x4e6e6
+   5a652: f7b0 ef58    	blx	0xb504 <__stack_chk_fail@plt> @ imm = #-0x4f150
+   5a656: bf00         	nop
+
+   5ac78: f101 021c    	add.w	r2, r1, #0x1c
+   5ac7c: f7b3 fb0c    	bl	0xe298 <.text+0x2200>   @ imm = #-0x4c9e8
+   5ac80: 9813         	ldr	r0, [sp, #0x4c]
+   5ac82: 4669         	mov	r1, sp
+   5ac84: 2300         	movs	r3, #0x0
+   5ac86: ae03         	add	r6, sp, #0xc
+   5ac88: f88d 300c    	strb.w	r3, [sp, #0xc]
+   5ac8c: e9cd 6301    	strd	r6, r3, [sp, #4]
+   5ac90: 9300         	str	r3, [sp]
+   5ac92: f7b1 e966    	blx	0xbf60 <system_info_get_platform_string@plt> @ imm = #-0x4ed34
+   5ac96: b998         	cbnz	r0, 0x5acc0 <.text+0x4ec28> @ imm = #0x26
+   5ac98: 9900         	ldr	r1, [sp]
+
+   5b246: f101 0222    	add.w	r2, r1, #0x22
+   5b24a: f7b3 f825    	bl	0xe298 <.text+0x2200>   @ imm = #-0x4cfb6
+   5b24e: 9819         	ldr	r0, [sp, #0x64]
+   5b250: 4649         	mov	r1, r9
+   5b252: 2300         	movs	r3, #0x0
+   5b254: af15         	add	r7, sp, #0x54
+   5b256: f88d 3054    	strb.w	r3, [sp, #0x54]
+   5b25a: e9cd 7313    	strd	r7, r3, [sp, #76]
+   5b25e: 9306         	str	r3, [sp, #0x18]
+   5b260: f7b0 ee7e    	blx	0xbf60 <system_info_get_platform_string@plt> @ imm = #-0x4f304
+   5b264: b9b0         	cbnz	r0, 0x5b294 <.text+0x4f1fc> @ imm = #0x2c
+   5b266: 9906         	ldr	r1, [sp, #0x18]

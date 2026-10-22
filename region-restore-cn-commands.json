@@ -1,0 +1,3 @@
+[
+  "gdbus call --system --dest comss.server --object-path /comss/server --method comss.server.interface.comss_set_gpm_countrycode CN; vconftool get db/comss/countrycode"
+]

@@ -1,0 +1,12 @@
+{
+  "model": "LS32BM80BUCXXF",
+  "date": "2026-10-21",
+  "key": "db/comss/countrycode",
+  "type": "string",
+  "original": "CN",
+  "target": "US",
+  "official_api_original": "SmartHubConfig.Country = CN",
+  "method": "comss.server.interface.comss_set_gpm_countrycode",
+  "factory_localset_changed": false,
+  "firmware_changed": false
+}

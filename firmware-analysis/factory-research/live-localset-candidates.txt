@@ -1,0 +1,19 @@
+((76, 63), (1,))
+INDEX=0
+(('NONE',), (1,))
+INDEX=1
+(('',), (0,))
+INDEX=2
+(('',), (0,))
+INDEX=3
+(('',), (0,))
+INDEX=4
+(('',), (0,))
+INDEX=64
+(('',), (0,))
+INDEX=65
+(('',), (0,))
+((0, 0, 0, 0, 0, byte 0x00, '', ''), (0,))
+Error: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Method GetUidItem is not implemented on interface org.tizen.tv.factoryservice
+
+[exit:1]

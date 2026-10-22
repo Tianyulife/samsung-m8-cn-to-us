@@ -1,0 +1,38 @@
+   49316: b089         	sub	sp, #0x24
+   49318: 2080         	movs	r0, #0x80
+   4931a: 58d3         	ldr	r3, [r2, r3]
+   4931c: a906         	add	r1, sp, #0x18
+   4931e: 2500         	movs	r5, #0x0
+   49320: 681b         	ldr	r3, [r3]
+   49322: 9307         	str	r3, [sp, #0x1c]
+   49324: f04f 0300    	mov.w	r3, #0x0
+   49328: 9506         	str	r5, [sp, #0x18]
+   4932a: f7e6 ef2e    	blx	0x30188 <system_info_get_value_string@plt> @ imm = #-0x191a4
+   4932e: 4604         	mov	r4, r0
+   49330: 2800         	cmp	r0, #0x0
+
+   6e116: a904         	add	r1, sp, #0x10
+   6e118: 2080         	movs	r0, #0x80
+   6e11a: 681b         	ldr	r3, [r3]
+   6e11c: 9305         	str	r3, [sp, #0x14]
+   6e11e: f04f 0300    	mov.w	r3, #0x0
+   6e122: 2300         	movs	r3, #0x0
+   6e124: e9c4 5300    	strd	r5, r3, [r4]
+   6e128: 7223         	strb	r3, [r4, #0x8]
+   6e12a: 9304         	str	r3, [sp, #0x10]
+   6e12c: f7c2 e82c    	blx	0x30188 <system_info_get_value_string@plt> @ imm = #-0x3dfa8
+   6e130: bb00         	cbnz	r0, 0x6e174 <_ZN13KPILogManager21m_GetProductSWVersionB5cxx11Ev+0x70> @ imm = #0x40
+   6e132: 9a04         	ldr	r2, [sp, #0x10]
+
+   70b42: 460d         	mov	r5, r1
+   70b44: 4628         	mov	r0, r5
+   70b46: a906         	add	r1, sp, #0x18
+   70b48: 2700         	movs	r7, #0x0
+   70b4a: 58d3         	ldr	r3, [r2, r3]
+   70b4c: 681b         	ldr	r3, [r3]
+   70b4e: 9307         	str	r3, [sp, #0x1c]
+   70b50: f04f 0300    	mov.w	r3, #0x0
+   70b54: 9706         	str	r7, [sp, #0x18]
+   70b56: f7bf eb18    	blx	0x30188 <system_info_get_value_string@plt> @ imm = #-0x409d0
+   70b5a: b350         	cbz	r0, 0x70bb2 <_ZN12ICSystemInfo19GetSystemInfoByTypeE17system_info_key_eRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0x7e> @ imm = #0x54
+   70b5c: 4b29         	ldr	r3, [pc, #0xa4]         @ 0x70c04 <_ZN12ICSystemInfo19GetSystemInfoByTypeE17system_info_key_eRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE+0xd0>

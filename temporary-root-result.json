@@ -1,0 +1,31 @@
+{
+  "model": "LS32BM80BUCXXF",
+  "host": "192.168.100.104",
+  "runtime": "3.1",
+  "authenticated": true,
+  "uid": 0,
+  "euid": 0,
+  "gid": 0,
+  "egid": 0,
+  "cap_eff": "0000003fffffffff",
+  "smack": "User",
+  "preflight_capabilities": "/usr/bin/dotnet = cap_setgid,cap_sys_admin+ei\n/usr/sbin/sdbd-tarlauncher = cap_setgid,cap_setuid+eip",
+  "commands": [
+    {
+      "command": "id; uname -rm; grep -E \"^(Uid|Gid|CapEff):\" /proc/self/status",
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "uid=0(owner) gid=0(root) groups=0(root),29(audio),44(video),201(display),1901(log),6509(app_logging),6525(usb_device),10001(priv_externalstorage),10002(priv_externalstorage_appdata),10013(priv_tee_client),10014(priv_peripheralio),10212(priv_platform),10501(priv_camera),10502(priv_mediastorage),10503(priv_recorder),10704(priv_internet),10705(priv_network_get),10711(priv_tethering_admin),10901(priv_email),10903(priv_message_read),11103(priv_mapservice),11201(priv_appdebugging) context=\"User\"\n5.4.77 armv7l\nUid:\t0\t0\t0\t0\nGid:\t0\t0\t0\t0\nCapEff:\t0000003fffffffff\n",
+      "stderr": ""
+    },
+    {
+      "command": "cat /proc/mounts; cat /proc/partitions",
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "/dev/root / vdfs ro,relatime 0 0\ndevtmpfs /dev devtmpfs rw,relatime,size=748824k,nr_inodes=151181,mode=755 0 0\ntmpfs /dev/shm tmpfs rw,nosuid,nodev 0 0\ndevpts /dev/pts devpts rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000 0 0\nmqueue /dev/mqueue mqueue rw,nosuid,nodev,noexec,relatime 0 0\nnone /proc proc rw,relatime 0 0\ntmpfs /tmp tmpfs rw,relatime 0 0\nsysfs /sys sysfs rw,nosuid,nodev,noexec,relatime 0 0\ndebugfs /sys/kernel/debug debugfs rw,relatime 0 0\ntracefs /sys/kernel/debug/tracing tracefs rw,relatime 0 0\nsmackfs /sys/fs/smackfs smackfs rw,nosuid,nodev,noexec,relatime 0 0\nsecurityfs /sys/kernel/security securityfs rw,nosuid,nodev,noexec,relatime 0 0\ntmpfs /sys/fs/cgroup tmpfs ro,nosuid,nodev,noexec,mode=755 0 0\ncgroup2 /sys/fs/cgroup/unified cgroup2 rw,nosuid,nodev,noexec,relatime,nsdelegate 0 0\ncgroup /sys/fs/cgroup/systemd cgroup rw,nosuid,nodev,noexec,relatime,xattr,name=systemd 0 0\ncgroup /sys/fs/cgroup/cpu,cpuacct cgroup rw,nosuid,nodev,noexec,relatime,cpu,cpuacct 0 0\ncgroup /sys/fs/cgroup/freezer cgroup rw,nosuid,nodev,noexec,relatime,freezer 0 0\ncgroup /sys/fs/cgroup/blkio cgroup rw,nosuid,nodev,noexec,relatime,blkio 0 0\ncgroup /sys/fs/cgroup/devices cgroup rw,nosuid,nodev,noexec,relatime,devices 0 0\ncgroup /sys/fs/cgroup/net_cls cgroup rw,nosuid,nodev,noexec,relatime,net_cls,release_agent=/usr/bin/net-cls-release 0 0\ncgroup /sys/fs/cgroup/cpuset cgroup rw,nosuid,nodev,noexec,relatime,cpuset 0 0\nresourced_cgroup /sys/fs/cgroup/resourced cgroup rw,nosuid,nodev,noexec,relatime,name=resourced_cgroup 0 0\nkdbusfs /sys/fs/kdbus kdbusfs rw,nosuid,nodev,noexec,relatime 0 0\n/dev/mmcblk0p23 /factory_peq squashfs ro,relatime 0 0\n/dev/mmcblk0p20 /mnt/systemrw vdfs rw,relatime,dncs 0 0\n/dev/mmcblk0p21 /opt vdfs rw,relatime,dncs 0 0\ntmpfs /opt/media tmpfs rw,relatime 0 0\n/dev/mmcblk0p21 /opt/usr/home/owner/content vdfs rw,relatime,dncs 0 0\ntmpfs /run tmpfs rw,nosuid,nodev,mode=777 0 0\ntmpfs /run/user/5001 tmpfs rw,nosuid,nodev,relatime,mode=700,uid=5001,gid=100 0 0\n/dev/mmcblk0p17 /mnt/drm vdfs rw,relatime,dncs 0 0\n/dev/loop0 /usr/share/chromium-efl squashfs ro,relatime 0 0\n/dev/loop1 /usr/share/chromium-efl/upgrade squashfs ro,relatime 0 0\n/dev/mmcblk0p21 /usr/share/sdbd/public.pem vdfs rw,relatime,dncs 0 0\n/dev/mmcblk0p21 /etc/passwd vdfs rw,relatime,dncs 0 0\nmajor minor  #blocks  name\n\n   1        0       8192 ram0\n   1        1       8192 ram1\n   1        2       8192 ram2\n   1        3       8192 ram3\n   1        4       8192 ram4\n   1        5       8192 ram5\n   1        6       8192 ram6\n   1        7       8192 ram7\n   1        8       8192 ram8\n   1        9       8192 ram9\n   1       10       8192 ram10\n   1       11       8192 ram11\n   1       12       8192 ram12\n   1       13       8192 ram13\n   1       14       8192 ram14\n   1       15       8192 ram15\n   7        0      40832 loop0\n   7        1      50816 loop1\n 254        0     912664 zram0\n 179        0    7634944 mmcblk0\n 179        1        512 mmcblk0p1\n 179        2        512 mmcblk0p2\n 179        3       3584 mmcblk0p3\n 179        4       3584 mmcblk0p4\n 179        5      16384 mmcblk0p5\n 179        6      16384 mmcblk0p6\n 179        7       1536 mmcblk0p7\n 179        8       1536 mmcblk0p8\n 179        9         64 mmcblk0p9\n 179       10         64 mmcblk0p10\n 179       11         64 mmcblk0p11\n 179       12       4096 mmcblk0p12\n 179       13       4096 mmcblk0p13\n 179       14       1024 mmcblk0p14\n 179       15       1024 mmcblk0p15\n 179       16       2048 mmcblk0p16\n 179       17      12288 mmcblk0p17\n 179       18    1740800 mmcblk0p18\n 179       19    1740800 mmcblk0p19\n 179       20      20480 mmcblk0p20\n 179       21    4033280 mmcblk0p21\n 179       22      12288 mmcblk0p22\n 179       23      12288 mmcblk0p23\n 179       24       4096 mmcblk0p24\n",
+      "stderr": ""
+    }
+  ],
+  "system_files_unchanged": true,
+  "staging_cleaned": true
+}

@@ -1,0 +1,1 @@
+["command -v timeout; /usr/bin/dlogutil -d 2>/dev/null | grep -E 'GPMUrl Communication fail|m_HubSiteReqGPMUrl err|This country is supported|This country is not supported|GetALLSysInfo err|CountryList Communication fail' | tail -30"]

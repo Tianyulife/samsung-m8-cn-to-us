@@ -1,0 +1,118 @@
+diff --git a/src/decompress.rs b/src/decompress.rs
+index 66b42b0..ee2272e 100644
+--- a/src/decompress.rs
++++ b/src/decompress.rs
+@@ -149,8 +149,11 @@ pub fn decompress_file(
+             bail!("Could not locate compressed file descriptor");
+         }
+     };
++    let mut descriptor_bytes = [0u8; 40];
++    let descriptor_len = (data.len() - descr_offset).min(40);
++    descriptor_bytes[..descriptor_len].copy_from_slice(&data[descr_offset..descr_offset + descriptor_len]);
+     let descr: Vdfs4CompFileDescr = unsafe {
+-        std::ptr::read_unaligned(data[descr_offset..].as_ptr() as *const Vdfs4CompFileDescr)
++        std::ptr::read_unaligned(descriptor_bytes.as_ptr() as *const Vdfs4CompFileDescr)
+     };
+ 
+     if !valid_comp_descr_magic(&descr.magic) {
+@@ -160,23 +163,22 @@ pub fn decompress_file(
+     let ctype = detect_compr_type(&descr.magic)
+         .context("unknown compression type in descriptor")?;
+ 
+-    // Samsung-specific "hZip"/"hGzp"/... descriptor: the reference tool
+-    // rejects these (magic[0] must be 'C' or 'I') and their extent table is
+-    // not in the reference layout. Empirically the whole region before the
+-    // descriptor is a single compression stream yielding the full file
+-    // (its decompressed length matches the descriptor's unpacked_size).
+-    if descr.magic[0] == b'h' {
+-        let region = &data[..descr_offset];
+-        return decompress_with(region, ctype)
+-            .with_context(|| format!("hZip single-stream inflate (len={})", region.len()));
+-    }
+-
+     let comp_extents_count = descr.extents_num as usize;
+     let extent_struct_size = std::mem::size_of::<Vdfs4CompExtent>();
+-
+-    // The compressed chunks live at the front of the blob; the comp_extent
+-    // table is contiguous immediately *before* the descriptor (at the tail).
+-    let table_offset = descr_offset.saturating_sub(comp_extents_count * extent_struct_size);
++    // Authenticated VDFS blobs place hashes and signature between extents
++    // and the final descriptor. Each extent is a separate compressed stream.
++    let digest_size = match descr.magic[0] {
++        b'C' => 0usize, b'I' => 16, b'H' => 20, b'h' => 32,
++        other => bail!("unsupported authentication prefix: {}", other),
++    };
++    let signature_size = match descr.sign_type {
++        0 => 0usize, 1 => 128, 2 => 256,
++        other => bail!("unsupported signature type: {}", other),
++    };
++    let authentication_size = (comp_extents_count + 1) * digest_size + signature_size;
++    let table_offset = descr_offset.checked_sub(
++        authentication_size + comp_extents_count * extent_struct_size
++    ).context("extent/authentication tables exceed compressed blob")?;
+ 
+     // Decompress every chunk and concatenate. The reference tool does not
+     // trust unpacked_size for sizing -- it simply writes each chunk's full
+@@ -196,7 +198,8 @@ pub fn decompress_file(
+             continue;
+         }
+         let start = comp_ext.start as usize;
+-        let chunk_end = (start + chunk_len).min(data.len());
++        let chunk_end = start.checked_add(chunk_len).context("compressed extent overflow")?;
++        if chunk_end > table_offset { bail!("compressed extent overlaps metadata"); }
+ 
+         if comp_ext.flags & VDFS4_CHUNK_FLAG_UNCOMPR != 0 {
+             result.extend_from_slice(&data[start..chunk_end]);
+@@ -208,5 +211,8 @@ pub fn decompress_file(
+         }
+     }
+ 
++    if result.len() != descr.unpacked_size as usize {
++        bail!("unpacked size mismatch: {} != {}", result.len(), {descr.unpacked_size});
++    }
+     Ok(result)
+ }
+diff --git a/src/unpacker.rs b/src/unpacker.rs
+index 366771c..a49ba2a 100644
+--- a/src/unpacker.rs
++++ b/src/unpacker.rs
+@@ -1,7 +1,6 @@
+ use anyhow::{Context, Result};
+ use std::collections::{HashMap, HashSet};
+ use std::fs;
+-use std::os::unix::fs::symlink;
+ use std::path::Path;
+ 
+ const S_IFMT: u16 = 0xF000;
+@@ -74,6 +73,9 @@ fn process_directory(
+     for child_rec in children {
+         let record_type = cattree_key_record_type(&child_rec);
+         let name = cattree_key_name_str(&child_rec).to_string();
++        if name.is_empty() || name == "." || name == ".." || name.contains('/') {
++            anyhow::bail!("unsafe catalog name: {:?}", name);
++        }
+ 
+         match record_type {
+             VDFS4_CATALOG_FOLDER_RECORD => {
+@@ -123,6 +125,9 @@ fn resolve_and_extract(
+ ) -> Result<()> {
+     let link_object = cattree_key_object_id(link_rec);
+     let name = cattree_key_name_str(link_rec).to_string();
++    if name.is_empty() || name == "." || name == ".." || name.contains('/') {
++        anyhow::bail!("unsafe link name: {:?}", name);
++    }
+     let child_path = output_path.join(&name);
+ 
+     // The link's object_id field is the target file's object_id. Look it up in
+@@ -208,8 +213,9 @@ fn extract_file(
+             String::from_utf8_lossy(&data).to_string()
+         };
+         let target = target.trim_end_matches('\0');
+-        symlink(target, output_path)
+-            .with_context(|| format!("create symlink {} -> {}", output_path.display(), target))?;
++        // Offline comparison does not require host symlinks. Record targets
++        // in the log to prevent firmware absolute links escaping extraction.
++        eprintln!("SYMLINK-METADATA {} -> {}", output_path.display(), target);
+         return Ok(());
+     }
+ 

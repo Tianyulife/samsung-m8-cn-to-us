@@ -1,0 +1,4 @@
+# Normalize generated CSV line endings without changing cell contents.
+*.csv text eol=lf
+# Preserve patch context lines exactly, including meaningful whitespace.
+*.patch -whitespace

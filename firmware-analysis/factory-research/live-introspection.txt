@@ -1,0 +1,150 @@
+node / {
+  node /TIFacSerObj {
+    interface org.freedesktop.DBus.Properties {
+      methods:
+        Get(in  s interface_name,
+            in  s property_name,
+            out v value);
+        GetAll(in  s interface_name,
+               out a{sv} properties);
+        Set(in  s interface_name,
+            in  s property_name,
+            in  v value);
+      signals:
+        PropertiesChanged(s interface_name,
+                          a{sv} changed_properties,
+                          as invalidated_properties);
+      properties:
+    };
+    interface org.freedesktop.DBus.Introspectable {
+      methods:
+        Introspect(out s xml_data);
+      signals:
+      properties:
+    };
+    interface org.freedesktop.DBus.Peer {
+      methods:
+        Ping();
+        GetMachineId(out s machine_uuid);
+      signals:
+      properties:
+    };
+    @com.Samsung.Exportable("true")
+    interface org.tizen.tv.factoryservice {
+      methods:
+        GetUidItem(in  i key,
+                   in  i src,
+                   in  i res,
+                   out (i) mystruct,
+                   out (i) ret);
+        GetStrItem(in  i key,
+                   out (s) mystruct,
+                   out (i) ret);
+        GetVersionInfo(out (s) mystruct,
+                       out (i) ret);
+        GetHotelModeInfo(out au mystruct,
+                         out (i) ret);
+        SetHotelModeInfo(in  au hotelData,
+                         out (i) ret);
+        FacAppStart();
+        FacAppExit();
+        GetItem(in  i key,
+                out (iiiiiyss) mystruct,
+                out (i) ret);
+        GetChildItem(in  i key,
+                     in  i index,
+                     out (iiiiiyss) mystruct,
+                     out (i) ret);
+        GetParentItem(in  i key,
+                      out (iiiiiyss) mystruct,
+                      out (i) ret);
+        Executes(in  i key,
+                 in  i cmd,
+                 out (s) str,
+                 out (i) ret);
+        GetFString(in  i ftype,
+                   out (s) fstr,
+                   out (i) ret);
+        SetParameter(in  i key,
+                     in  i val,
+                     out (i) ret);
+        InitAutomationMovieWb(out (i) ret);
+        ResetFactory(out (i) ret);
+        SetOptionStringData(in  i key,
+                            in  s str,
+                            in  i size,
+                            out (i) ret);
+        GetOptionStringData(in  i key,
+                            out (si) mystruct,
+                            out (i) ret);
+        GetEcoSensorTestResult(out (ii) mystruct,
+                               out (i) ret);
+        GetVoltageMonitoringResult(in  i key,
+                                   out (ii) mystruct,
+                                   out (i) ret);
+        SaveLog(in  i mode,
+                out (s) str,
+                out (i) ret);
+        SendAgingLineTestResult(in  i type,
+                                in  i result,
+                                out (i) ret);
+        GetLocalSetListNo(out (ii) mystruct,
+                          out (i) ret);
+        GetLocalSetStr(in  i key,
+                       out (s) mystruct,
+                       out (i) ret);
+        GetFrontColorStr(in  i key,
+                         out (s) mystruct,
+                         out (i) ret);
+        WriteSerialNumber(in  au key,
+                          in  u size,
+                          out (i) ret);
+        SetHotelCombinationKey(in  i key,
+                               out (i) ret);
+        SetDecimalValue(in  i id,
+                        in  i val,
+                        out (i) ret);
+        FactoryCloneTvToUsb(out (i) ret);
+        FactoryCloneUsbToTv(out (i) ret);
+        SetParameterArray(in  au uid,
+                          in  au val,
+                          in  i vlen,
+                          out (i) ret);
+        GetQRCodeFiles(out (s) pngPath,
+                       out (i) ret);
+        GetSerialQRCodeFiles(out (s) pngPath,
+                             out (i) ret);
+        SetParameterAndOpcode(in  i key,
+                              in  i val,
+                              in  i cmd,
+                              out (i) ret);
+        UpdateRegionByCountry(in  i eCountry,
+                              out (i) ret);
+        UpdateRegion(in  i region,
+                     out (i) ret);
+        GetSerialNo(out (s) mystruct,
+                    out (i) ret);
+        SetItemEnable(in  i controltype,
+                      in  i enable,
+                      out (i) ret);
+        GetHotelCountryListNo(in  s str,
+                              out (i) mystruct);
+        GetCountryStr(in  i key,
+                      out (si) mystruct);
+        GetLocalSetStrPnp(in  i key,
+                          out (s) mystruct,
+                          out (i) ret);
+        SetLocalSetPnp(in  i val,
+                       out (i) ret);
+        UpdateSubOtp(in  i type,
+                     out (i) ret);
+        GetMicTestList(out ai mystruct,
+                       out (i) ret);
+      signals:
+        exception_handler(s exception_description);
+      properties:
+    };
+  };
+};
+
+[exit:0]

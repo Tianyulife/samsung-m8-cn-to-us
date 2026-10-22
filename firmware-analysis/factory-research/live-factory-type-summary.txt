@@ -1,0 +1,16 @@
+Raw serialized factory record omitted; original retained locally.
+region_setting_page_suppport rc=0 value=0
+CURRENT_GLOBAL_LOCALSET rc=1 value=65
+RAW_FACTORY uid=194 rc=1 value=65
+RAW_FACTORY uid=761 rc=1 value=13
+LOCALSET_ITEM rc=1
+ITEM_INT[0]=401
+ITEM_INT[1]=0
+ITEM_INT[2]=3
+ITEM_INT[3]=1000000069
+ITEM_INT[4]=6
+ITEM_INT[5]=1229472513
+VISIBLE_LOCALSET store=0 name=NONE
+VISIBLE_LOCALSET store=63 name=CHI_DTV
+
+[exit:0]

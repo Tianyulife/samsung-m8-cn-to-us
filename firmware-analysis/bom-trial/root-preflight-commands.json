@@ -1,0 +1,1 @@
+["id; grep -E '^(Uid|Gid|CapEff):' /proc/self/status; sha256sum /usr/lib/libfactory-interface-WW.so; /usr/bin/dotnet /home/owner/share/tmp/sdk_tools/m8-model-read/ModelIdentity.dll"]

@@ -1,0 +1,72 @@
+{
+  "files": {
+    "CN-1651.1": 60060,
+    "US-1720.7": 61220
+  },
+  "identical": 43673,
+  "changed": 15679,
+  "only_cn": 708,
+  "only_us": 1868,
+  "selected_default_keys": 42,
+  "selected_default_keys_identical": [
+    "db/comss/cisblock",
+    "db/comss/countrycode",
+    "db/comss/gpmurl/apps",
+    "db/comss/gpmurl/clips",
+    "db/comss/gpmurl/configproperties",
+    "db/comss/gpmurl/eden",
+    "db/comss/gpmurl/emailreg",
+    "db/comss/gpmurl/game",
+    "db/comss/gpmurl/geo",
+    "db/comss/gpmurl/hbbtv",
+    "db/comss/gpmurl/idm",
+    "db/comss/gpmurl/kbo",
+    "db/comss/gpmurl/newson",
+    "db/comss/gpmurl/notice",
+    "db/comss/gpmurl/ontv",
+    "db/comss/gpmurl/sas",
+    "db/comss/gpmurl/searchall",
+    "db/comss/gpmurl/soccer",
+    "db/comss/gpmurl/sso",
+    "db/comss/gpmurl/twittergw",
+    "db/comss/gpmurl/ultvd",
+    "db/comss/gpmurl/umd",
+    "db/comss/mobilecountrycode",
+    "db/ephotel/pnp/initcountry",
+    "db/menu/support/selfdiagnosis/autodiagnosis/country",
+    "db/menu/system/rgtvitem/country",
+    "db/private/commoninterface/country_code_cache",
+    "db/sso/sso_country_default",
+    "db/system/analog_country",
+    "db/system/country",
+    "db/system/country_alpha_2_code",
+    "db/system/country_string",
+    "db/system/digital_country",
+    "db/system/pnp_country",
+    "db/was/preload_by_country",
+    "db/was/removable_by_country",
+    "db/wizard/country_step"
+  ],
+  "selected_default_keys_different": [
+    "db/sso/pre_sa_user_country_code",
+    "db/sso/sa_user_country_code",
+    "db/sso/sa_user_country_code_2alpha",
+    "db/sso/sa_user_country_code_3alpha",
+    "db/wizard/country_value"
+  ],
+  "model_config_changes": {
+    "tizen.org/feature/security.device_certificate": [
+      null,
+      "true"
+    ]
+  },
+  "version_caveat": "Different firmware builds: differences cannot automatically be attributed to sales region.",
+  "selected_default_keys_only_us": [
+    "db/sso/pre_sa_user_country_code",
+    "db/sso/sa_user_country_code",
+    "db/sso/sa_user_country_code_2alpha",
+    "db/sso/sa_user_country_code_3alpha",
+    "db/wizard/country_value"
+  ],
+  "selected_default_keys_changed_in_both": []
+}

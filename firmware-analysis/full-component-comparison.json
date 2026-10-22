@@ -1,0 +1,54 @@
+{
+  "counts": {
+    "CN-1651.1": 101,
+    "US-1720.7": 97
+  },
+  "only_cn": {
+    "com.samsung.tv.coba.dhcategory": {
+      "version": "1.0.0",
+      "source": "rootfs/root/usr/apps",
+      "label": "CoBA Discovery Home Category Component"
+    },
+    "com.samsung.tv.coba.apps": {
+      "version": "1.0.0",
+      "source": "rootfs/root/usr/apps",
+      "label": "Apps"
+    },
+    "com.samsung.tv.coba.search": {
+      "version": "1.0.0",
+      "source": "rootfs/root/usr/apps",
+      "label": "Search"
+    },
+    "com.samsung.tv.coba.source": {
+      "version": "1.0.1",
+      "source": "rootfs/root/usr/apps",
+      "label": "Source"
+    },
+    "csapi-tv-flux-component": {
+      "version": "2.1.83.3",
+      "source": "rootfs/root/usr/apps",
+      "label": "csapi-tv-flux-component"
+    },
+    "com.samsung.tv.coba.livetv": {
+      "version": "1.0.0",
+      "source": "rootfs/root/usr/apps",
+      "label": "LiveTV"
+    }
+  },
+  "only_us": {
+    "com.samsung.tv.cms-service": {
+      "version": "122.25.01151",
+      "source": "initial-data/data/root/usr/apps",
+      "label": "cms-daemon"
+    },
+    "com.samsung.tv.coba.epg": {
+      "version": "1.0.0",
+      "source": "rootfs/root/usr/apps",
+      "label": "CoBA EPG App"
+    }
+  },
+  "regional_examples": {
+    "CN-1651.1": {},
+    "US-1720.7": {}
+  }
+}

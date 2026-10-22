@@ -1,0 +1,13 @@
+{
+  "size": 65536,
+  "sha256": "c7e6461f398b891ad4ab5dd321d135cd2a0b197dc567d73d063f11f8b8e15fcd",
+  "changes": [
+    {
+      "offset": "0x3e65",
+      "before": 13,
+      "after": 0
+    }
+  ],
+  "localset_storage_byte": 1,
+  "prevent_import_storage_byte": 0
+}

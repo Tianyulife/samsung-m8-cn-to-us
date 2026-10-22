@@ -10,7 +10,7 @@
 
 | 项目 | 初始状态 | 最终状态 |
 | --- | --- | --- |
-| 型号 / 销售地区 | LS32BM80BUCXXF / 中国大陆 | 未修改型号与销售后缀 |
+| 原机销售型号 / 当前 BOM | LS32BM80BUCXXF / 中国大陆 | **LS32BM80BUNXGO（蓝色美区 BOM）**；原机硬件来源不变 |
 | 固件 | T-PTMWWC-1651.1 | 用户界面确认 1720.7，已完成 OTA |
 | 系统 | 2022 年 Tizen 平台；实测 Tizen 6.5 / ARMv7 | 系统构建已更新 |
 | Local Set 全局枚举 | 65 / CHI_DTV | **1 / US** |
@@ -20,7 +20,7 @@
 | WAS 国内服务器开关 | true | **false** |
 | 认证 / 安全服务域名 | samsungqbe.cn | **samsungqbe.com** |
 
-RAM 2.5 GB、标称存储 8 GB 为用户提供的规格。没有修改 BOM 型号、序列号、设备证书、面板或校准参数，也没有通过原始分区写入强刷固件。最终使用的是官方 OTA。
+RAM 2.5 GB、标称存储 8 GB 为用户提供的规格。换区与 OTA 阶段没有修改 BOM 型号。后续完成了蓝色美区 BOM 的单字段往返实验；用户再明确要求正式保留后，当前已设为 LS32BM80BUNXGO。序列号、设备证书、面板和校准参数未修改。没有通过原始分区写入强刷固件，升级使用官方 OTA。
 
 ## 核心发现
 
@@ -65,7 +65,7 @@ com.samsung/featureconf/was.use_china_server
 
 | 验证 | 结果与证据 |
 | --- | --- |
-| 1651.1 临时 root | 已成功；UID/EUID/GID/EGID 为 0，会话结束后清理通过 |
+| 1651.1 / 1720.7 临时 root | 两版均已实机成功；1720.7 后续 BOM 实验另有认证与清理证据 |
 | 海外 Apps | 用户在各阶段确认正常；升级后也反馈使用正常 |
 | Local Set 写入 | [独立 NVRAM 差异](firmware-analysis/localset-trial/storage-diff.json) |
 | Preventing Import 写入 | [独立 NVRAM 差异](firmware-analysis/import-trial/storage-diff.json) |
@@ -75,7 +75,11 @@ com.samsung/featureconf/was.use_china_server
 
 最终系统构建日期从 `20240806_104024` 变为 `20260224_181131`；认证、安全服务分别为 `https://osb-auth-v2.samsungqbe.com`、`https://osb-secure-v2.samsungqbe.com`。
 
-**尚未验证：**1720.7 上重新取得 root、恢复出厂后的配置保持、未来 OTA、全部应用的账号/DRM/地域授权、断电测试与固件降级。升级后的成功读取使用 SDK 通道，不等于已重新验证 root。
+**尚未验证：**恢复出厂后的配置保持、未来 OTA、全部应用的账号/DRM/地域授权、断电测试与固件降级。升级后的首次配置读取使用 SDK 通道；之后已在独立的 BOM 实验中重新验证 1720.7 临时 root。蓝色美区 BOM 的正常重启保持及网络型号缓存刷新已另行验证；新型号下的 OTA 与云端身份接受规则仍未验证。
+
+## 后续：蓝色美区 BOM 可回退实验
+
+在 1720.7 上将 `LS32BM80BUCXXF` 临时改为蓝色美区型号 `LS32BM80BUNXGO`，用户确认型号界面已改变且 Apps 无新增报错。原生 64 KiB 存储仅改变 BOM 记录内 3 个字节，之后恢复原型号验证回退。用户随后要求正式保留，现已再次写入 LS32BM80BUNXGO，并独立验证仅改变 BOM 记录内3个字节，无新增定时回退。详细步骤、回退核验及最终状态见 [BOM 实验记录](firmware-analysis/bom-trial/result.md)。往返试验后正式保留型号，并经用户手动重启确认 BOM、系统型号和网络接口型号均为 LS32BM80BUNXGO；US、Preventing Import=0 等配置保留。这不代表取得美国硬件或证书身份。
 
 ## 文档与工具索引
 

@@ -1,0 +1,73 @@
+{
+  "native_manifest_count": {
+    "CN-1651.1": 77,
+    "US-1720.7": 72
+  },
+  "packages_only_cn": {
+    "com.samsung.tv.coba.dhcategory": {
+      "version": "1.0.0",
+      "labels": [
+        "CoBA Discovery Home Category Component"
+      ],
+      "executables": [
+        "Com.Samsung.TV.CoBA.dhcategory.dll"
+      ]
+    },
+    "com.samsung.tv.coba.search": {
+      "version": "1.0.0",
+      "labels": [
+        "Search"
+      ],
+      "executables": [
+        "Com.Samsung.TV.CoBA.Search.dll"
+      ]
+    },
+    "csapi-tv-flux-component": {
+      "version": "2.1.83.3",
+      "labels": [
+        "csapi-tv-flux-component"
+      ],
+      "executables": [
+        "Tizen.TV.FLUX.Component.dll"
+      ]
+    },
+    "com.samsung.tv.coba.source": {
+      "version": "1.0.1",
+      "labels": [
+        "Source"
+      ],
+      "executables": [
+        "Com.Samsung.TV.CoBA.Source.dll"
+      ]
+    },
+    "com.samsung.tv.coba.apps": {
+      "version": "1.0.0",
+      "labels": [
+        "Apps"
+      ],
+      "executables": [
+        "Com.Samsung.TV.CoBA.Apps.dll"
+      ]
+    },
+    "com.samsung.tv.coba.livetv": {
+      "version": "1.0.0",
+      "labels": [
+        "LiveTV"
+      ],
+      "executables": [
+        "Com.Samsung.TV.CoBA.LiveTV.dll"
+      ]
+    }
+  },
+  "packages_only_us": {
+    "com.samsung.tv.coba.epg": {
+      "version": "1.0.0",
+      "labels": [
+        "CoBA EPG App"
+      ],
+      "executables": [
+        "Com.Samsung.TV.CoBA.EPG.dll"
+      ]
+    }
+  }
+}

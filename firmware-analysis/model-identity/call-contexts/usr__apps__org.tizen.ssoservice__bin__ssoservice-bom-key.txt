@@ -1,0 +1,9 @@
+   4d47c: f44f 7192    	mov.w	r1, #0x124
+   4d480: 4652         	mov	r2, r10
+   4d482: 4630         	mov	r0, r6
+   4d484: 2300         	movs	r3, #0x0
+   4d486: f10d 0834    	add.w	r8, sp, #0x34
+   4d48a: f88d 3034    	strb.w	r3, [sp, #0x34]
+   4d48e: e9cd 830b    	strd	r8, r3, [sp, #44]
+   4d492: f023 fb4f    	bl	0x70b34 <_ZN12ICSystemInfo19GetSystemInfoByTypeE17system_info_key_eRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEE> @ imm = #0x2369e
+   4d496: 2800         	cmp	r0, #0x0

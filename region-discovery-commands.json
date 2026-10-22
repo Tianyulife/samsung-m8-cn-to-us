@@ -1,0 +1,7 @@
+[
+  "id; command -v vconftool; command -v sqlite3; command -v dbus-send; command -v gdbus; command -v strings",
+  "ls -ld /opt/etc /opt/dbspace /mnt/systemrw /mtd_rwarea; ls /opt/etc; ls /mnt/systemrw",
+  "ls /opt/dbspace | head -100; ls /usr/bin/*vconf* /usr/bin/*config* /usr/bin/*factory* 2>/dev/null",
+  "find /opt/etc /mnt/systemrw -maxdepth 2 -type f 2>/dev/null | head -150",
+  "ls /usr/lib/*product* /usr/lib/*vconf* /usr/lib/*system*setting* /usr/lib/*smarthub* 2>/dev/null"
+]

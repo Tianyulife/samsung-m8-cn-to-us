@@ -1,0 +1,14 @@
+FACTORY_STRING uid=0x238f rc=1 length=4 value=M80B
+FACTORY_STRING uid=0x2392 rc=1 length=14 value=LS32BM80BUCXXF
+SYSTEM_INFO key=0x0 rc=0 value=M80B
+SYSTEM_INFO key=0x80 rc=0 value=T-PTMWWC-1720.7
+SYSTEM_INFO key=0x124 rc=0 value=LS32BM80BUCXXF
+BOM_MODEL rc=1 length=14 value=LS32BM80BUCXXF
+SYSTEM_MODEL rc=0 value=LS32BM80BUCXXF
+LocalSet uid194 rc=1 value=1
+PreventingImport uid761 rc=1 value=0
+LocalSet enum rc=1 value=1
+was.before rc=0 value=0
+db/comss/countrycode, value = US (String)
+
+[exit:0]

@@ -1,0 +1,20 @@
+{
+  "CN-1651.1": {
+    "db/sso/sa_user_country_code": null,
+    "db/sso/sa_user_country_code_2alpha": null,
+    "db/sso/sa_user_country_code_3alpha": null,
+    "db/sso/pre_sa_user_country_code": null,
+    "db/wizard/country_value": null,
+    "db/comss/countrycode": "<('http://tizen.org/privilege/internal/default/public', 'http://tizen.org/privilege/internal/default/public', 'product_vconf_key_creator', <''>)>",
+    "db/system/country": "<('http://tizen.org/privilege/internal/default/public', 'http://tizen.org/privilege/internal/default/public', 'product_vconf_key_creator', <1>)>"
+  },
+  "US-1720.7": {
+    "db/sso/sa_user_country_code": "<('http://tizen.org/privilege/internal/default/public', 'http://tizen.org/privilege/internal/default/public', 'buxton2ctl', <''>)>",
+    "db/sso/sa_user_country_code_2alpha": "<('http://tizen.org/privilege/internal/default/public', 'http://tizen.org/privilege/internal/default/public', 'buxton2ctl', <''>)>",
+    "db/sso/sa_user_country_code_3alpha": "<('http://tizen.org/privilege/internal/default/public', 'http://tizen.org/privilege/internal/default/public', 'buxton2ctl', <''>)>",
+    "db/sso/pre_sa_user_country_code": "<('http://tizen.org/privilege/internal/default/public', 'http://tizen.org/privilege/internal/default/public', 'buxton2ctl', <''>)>",
+    "db/wizard/country_value": "<('http://tizen.org/privilege/internal/default/public', 'http://tizen.org/privilege/internal/default/public', 'buxton2ctl', <-1>)>",
+    "db/comss/countrycode": "<('http://tizen.org/privilege/internal/default/public', 'http://tizen.org/privilege/internal/default/public', 'product_vconf_key_creator', <''>)>",
+    "db/system/country": "<('http://tizen.org/privilege/internal/default/public', 'http://tizen.org/privilege/internal/default/public', 'product_vconf_key_creator', <1>)>"
+  }
+}

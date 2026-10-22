@@ -1,0 +1,138 @@
+{
+  "before": [
+    {
+      "storage_index": 0,
+      "name": "NONE"
+    },
+    {
+      "storage_index": 63,
+      "name": "CHI_DTV"
+    }
+  ],
+  "after": [
+    {
+      "storage_index": 0,
+      "name": "NONE"
+    },
+    {
+      "storage_index": 1,
+      "name": "US"
+    },
+    {
+      "storage_index": 2,
+      "name": "KOR"
+    },
+    {
+      "storage_index": 3,
+      "name": "SD_MEXICO"
+    },
+    {
+      "storage_index": 5,
+      "name": "EU"
+    },
+    {
+      "storage_index": 12,
+      "name": "CIS_RUSSIA"
+    },
+    {
+      "storage_index": 13,
+      "name": "CIS_UKR"
+    },
+    {
+      "storage_index": 14,
+      "name": "EU_TURKEY"
+    },
+    {
+      "storage_index": 18,
+      "name": "CIS_CA_UZ"
+    },
+    {
+      "storage_index": 20,
+      "name": "EU_ISRAEL"
+    },
+    {
+      "storage_index": 21,
+      "name": "AD_AU2"
+    },
+    {
+      "storage_index": 23,
+      "name": "AD_SIN2"
+    },
+    {
+      "storage_index": 44,
+      "name": "ED_IRAN"
+    },
+    {
+      "storage_index": 45,
+      "name": "ED_VIET"
+    },
+    {
+      "storage_index": 46,
+      "name": "ED_INA"
+    },
+    {
+      "storage_index": 47,
+      "name": "ED_INDIA"
+    },
+    {
+      "storage_index": 48,
+      "name": "ED_THAI"
+    },
+    {
+      "storage_index": 49,
+      "name": "ED_PHI"
+    },
+    {
+      "storage_index": 50,
+      "name": "ED_EGYPT"
+    },
+    {
+      "storage_index": 55,
+      "name": "ED_AFR"
+    },
+    {
+      "storage_index": 57,
+      "name": "ED_MAL"
+    },
+    {
+      "storage_index": 58,
+      "name": "ED_UAE"
+    },
+    {
+      "storage_index": 61,
+      "name": "COLOMBIA"
+    },
+    {
+      "storage_index": 62,
+      "name": "TAIWAN"
+    },
+    {
+      "storage_index": 63,
+      "name": "CHI_DTV"
+    },
+    {
+      "storage_index": 64,
+      "name": "HKG_DTV"
+    },
+    {
+      "storage_index": 66,
+      "name": "BRA_DTV"
+    },
+    {
+      "storage_index": 67,
+      "name": "CHILE_DTV"
+    },
+    {
+      "storage_index": 68,
+      "name": "PERU_DTV"
+    },
+    {
+      "storage_index": 69,
+      "name": "ARG_DTV"
+    },
+    {
+      "storage_index": 73,
+      "name": "SELA"
+    }
+  ]
+}

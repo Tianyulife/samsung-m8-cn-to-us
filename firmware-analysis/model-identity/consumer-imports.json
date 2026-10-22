@@ -1,0 +1,1346 @@
+[
+  {
+    "file": "usr/bin/TVDeviceCare",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/contents-recognition-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libtfeature.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/emps/empPepperPlugins/avinfo/libavinfo.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/emps/empPepperPlugins/productinfo/libproductinfo.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/ses-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/local/BM/EW/lib/libew-tcm.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/local/BM/EW/lib/libew-scenario.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/hdmicec-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libcoreapp-util.so.0.1.0",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/local/BM/EW/lib/libew-porting.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/TIFSDaemon",
+    "imports": [
+      "system_info_get_value_string",
+      "_ZN10FCNvramMap11GetBomModelEPcPi",
+      "_ZN10FCNvramMap13WriteBomModelEPKcj",
+      "_ZN10FCNvramMap18InitializeBomModelEv"
+    ]
+  },
+  {
+    "file": "usr/bin/app-boot-manager",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/emergencyLogTransmitterRun",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/emps/empPepperPlugins/appcommon/libappcommon.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/SWUCoreTV",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/sbin/sdbd",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/sbin/sdbd-service",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/targetLogClient",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/boot-perfmon-tv",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/sbin/net-config",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/SWUStandalone",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/remote-server",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/SWUVerifierTV",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/SCSAgent",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/usb-sound-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/QSysHDMIErrorHistory",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libscim-1.0.so.8.2.3",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/pushd",
+    "imports": [
+      "system_info_get_value_string",
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/tvs-ht-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libep-common-ui-api.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/fw-update-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/esd",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/test-oqc-tv",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/TIFADaemon_L",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libappcore-common.so.1.15.4",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/fconfigd",
+    "imports": [
+      "factory_get_model_enum"
+    ]
+  },
+  {
+    "file": "usr/bin/HSMClient",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/emergencyLogTransmitter",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libhbbtv-dynamic-profile.so.0.2.1",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/calendar-serviced-tv",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/isf-panel-efl",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/TIFADaemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/mobileap-agent",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libvconf-internal-keys-tv.so.0.1.232",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libmmfwfdsink.so.0.0.0",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/isf-demo-efl",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libemanual.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libbluetooth-api.so.1.0.0",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/mbr-daemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/media-analytics-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/sp-kpi",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libsystem-info-external-plugin.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/qse-daemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/socite_service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/source-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libdrmdecrypt.so.0.1.0",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/data-service-collector/kpi/libcollector-kpi.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/tvs-daemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libtvs-util.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/sesdaemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/rscmdemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/SWUService",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/issue_report_agent",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/test-oqc-tv-agent",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/appbinary-manager",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/rmdemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/fw-usb-update-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/SWUAutoUpgrade",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/qdinfo-daemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libwinsys-core-cpp.so.6.5.37",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/bin/devicetracker",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/ssc-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/bin/RobustnessMonitor",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libprovider-api.so.0.2",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/scim-1.0/1.4.0/PanelAgent/ecoresocket.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/scim-1.0/1.4.0/PanelAgent/wayland.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/scim-1.0/1.4.0/Config/socket.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/scim-1.0/1.4.0/FrontEnd/socket.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libIUARTService.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libcapi-media-epplayer.so.0.4.0",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libiotcon.so.0.4.0",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libseal-app-fwk.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libAUB.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libcapi-va-policy-tv.so.0.2",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libnfcif.so.0.6",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libbroadcastapp-util.so.0.1.0",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libamd.so.1.44.41",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libtvdc_parser.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libcion.so.1.1.7",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libSoftwareUpgradeAPIForLFD.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libnagsam-mw.so.0.1.0",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libwgt-manifest-handlers.so.1.9.4",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libcapi-network-bluetooth.so.0.5.3",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libAT-HUB.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libapp-installers.so.1.34.43",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/librdm-common.so.1.0.11",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libknox_browser_log.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/gstreamer-1.0/libgstffmpeg.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libep-system-api-common.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/liblcc-player-tv.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libisf-control.so.8.2.3",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/telephony/plugins/manager-plugin.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/librdm-adapter.so.1.3.6",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/tizen-extensions-crosswalk/libwebapis_productinfo.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libcapi-system-device.so.0.1.0",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/tizen-extensions-crosswalk/libtizen_systeminfo.so",
+    "imports": [
+      "system_info_get_value_string",
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libVDCurl.so.0.9",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libDDPDeviceInfo.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/storaged/module_storage.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/storaged/module_block.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libtdm-sditemresultprovider.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libmenu-util.so.0.1.0",
+    "imports": [
+      "system_info_get_value_string",
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libfkp.so.0.1.0",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libdevice_info.so.0.0.2",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libci-module.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libfactory-data-config.so.00.00.0057",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libfw-update-control.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libep-clone-api.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/enlightenment/modules/e-mod-tizen-wl-textinput/linux-gnueabi-armv7l-ver-autocannoli-0.20/module.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libcapi-network-connection.so.1.0.139_20211015+tv",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libep-swupgrade-interface.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libgst-ext-lib.so.0.1.0",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/ecore_imf/modules/wayland/v-1.25/module.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libwas_common.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/sensor/libsensor-hal-accelerometer-sensor.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libaul.so.0.43.16",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libSoftwareUpgradeAPI.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libtvs-ht-api.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libcapi-system-system-settings.so.0.0.6",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libsso_service_api.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/lib/libmmfcamcorder.so.0.0.0",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/screen_sharing/bin/screen_sharing",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/amd/mod/libamd-mod-splash-screen-tv.so",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.registerav/bin/registerav",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libprovider-setup-visibilitychecker.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libhbbtv-visibility-checker.so.0.2.1",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libmbr-visiblechecker.so.0.2.3",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libsupport-rscm-provider.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libprovider-setup-dataprovider.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libSWUMenuItemVisibilityChecker.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libbroadcastmenu-visiblechecker.so.0.1",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libsso-visibility-checker.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libsd-swversion-dataprovider.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libSWUMenuItemDataProvider.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/share/menu/providers/libprovider-setup-enablechecker.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.NetworkSetting-Tizen/bin/NetworkSetting-Tizen",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-mbr-new.so.0",
+    "imports": [
+      "system_info_get_value_string",
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-SoftwareUpgrade.so",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-wizard-terms.so.0.2.0",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-mhegUG-efl.so.0.5",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-bnr-tv.so.1.0",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-SystemSetupNetworkUG-efl.so.0.2",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-MdmUG-efl.so.0.1",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-voice-onboarding-tv.so.0.2",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-provider-setup.so.0.2",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-promotion-tv.so.0.1",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.menu/bin/menu",
+    "imports": [
+      "factory_get_model_str",
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libhbbtv-coreapi.so.0.2.1",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-wizard-setup-new.so.0.2",
+    "imports": [
+      "system_info_get_value_string",
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/ug/lib/libug-sso.so.0.2.5",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.litewebappservice/bin/litewebappservice",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.connection-guide-app/bin/connection-guide-app",
+    "imports": [
+      "system_info_get_value_string",
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.SmartRC/bin/SmartRC",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/boot-perfmon-tv/bin/perflog_store",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tizen.samsung-service-manager/bin/samsung-service-manager",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.provider-resetpsid/bin/provider-resetpsid",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.picture-test/bin/picture-test",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.was-appsync/bin/was-appsync",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.remote-shop-care-hub/bin/rscmgui",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.remote-shop-care-hub/bin/rscmscreensaver",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.remote-shop-care-hub/bin/rscmsyncplayer",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.tv.ci-app/bin/ci-app",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.broadcastingmenu/bin/broadcastingmenu",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.sound-test/bin/sound-test",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.factory/bin/factory",
+    "imports": [
+      "system_info_get_value_string",
+      "factory_get_bom_model"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.request-support/bin/org.tizen.request-support",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.was-reset/bin/was-reset",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.easysetup-daemon/bin/org.tizen.easysetup-daemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.video-test/bin/video-test",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.remotepc/bin/remotepc_manager",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.NW-Daemon/bin/NW-Daemon",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.was-builtinupgrade/bin/was-builtinupgrade",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.btapp/bin/btapp-lite",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/ContentServiceManager/bin/ContentServiceManager",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.cloning/bin/cloning",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.cobalt/bin/cobalt_launcher",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.cobalt/bin/crashpad_handler",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.chromium-efl/bin/efl_webview_app",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.chromium-efl/bin/ubrowser",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.chromium-efl/bin/mini_browser",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.tv-viewer/bin/tv-viewer",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/capi-bnr-tv/bin/bnr-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/scs-agent/SCSClient",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.psid-checker/bin/psid-checker",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.bt-mdemanager/bin/com.samsung.tv.bt-info-sync",
+    "imports": [
+      "system_info_get_value_string",
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.heremaps-uc/bin/heremaps-uc",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.volume-setting/bin/volume-setting",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.aisound-app/bin/com.samsung.tv.aisound-app",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/dmr_service_app/bin/dmr",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.smarthub-connection-test/bin/org.tizen.smarthub-connection-test",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.ssoservice/bin/ssoservice",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/ep-hotel-protocol/bin/ep-hotel-protocol",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.SelfDiagnosis/bin/com.samsung.selfdiagnosis",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/comss/bin/comss",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.maintenance-mode/bin/maintenance-mode",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.maintenance-mode/bin/mtm-banner",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.sddp/bin/SDDP",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.hbbtv/bin/hbbtv_app",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.waapp-contents-provider/bin/waapp-contents-provider",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.sp-service/bin/sp-service",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.tv.swu/bin/SWUUpdateDetailsPopup",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.tv.swu/bin/SWUStandaloneUI",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.was-appupdate/bin/was-appupdate",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.remote-management/bin/rmsurvey",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.remote-management/bin/rmuidbusefl",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.knox-browser/bin/knox-browser",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/emergency-log-transmitter/bin/emergency-log-transmitter",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.rdm-client/lib/librdm-common.so.1.0.13",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.dpm-syspopup/bin/org.tizen.dpm-syspopup",
+    "imports": [
+      "system_info_get_platform_string"
+    ]
+  },
+  {
+    "file": "usr/apps/com.samsung.tv.audio-share/bin/audio-share",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  },
+  {
+    "file": "usr/apps/org.tizen.webappservice/bin/webappservice",
+    "imports": [
+      "system_info_get_value_string"
+    ]
+  }
+]

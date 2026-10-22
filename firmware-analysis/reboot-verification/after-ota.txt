@@ -1,0 +1,43 @@
+BOOT_ID
+ccabc784-a14b-43a5-b71e-f1355339ac7b
+UPTIME
+96.52 111.72
+FIRMWARE
+[Version]
+Model=Tizen6/TV;
+Build=latest;
+Release=latest;
+[Build]
+Type=eng;
+Date=20260224_181131;
+Time=18:11:31;
+Variant=NONE;
+ID=latest;
+FACTORY
+LocalSet uid194 rc=1 value=1
+PreventingImport uid761 rc=1 value=0
+LocalSet enum rc=1 value=1
+WAS_FLAG
+was.before rc=0 value=0
+COUNTRY
+db/comss/countrycode, value = US (String)
+ENDPOINTS
+rtc/db/comss/gpmurl/sastv, value = https://osb-auth-v2.samsungqbe.com (String)
+rtc/db/comss/gpmurl/idm, value = https://osb-secure-v2.samsungqbe.com (String)
+WATCHDOGS
+/home/owner/share/tmp/sdk_tools/m8-region-trial/keep-us
+WATCHDOG_ARMED pid=1246
+CANCELLED
+/home/owner/share/tmp/sdk_tools/m8-localset-trial/keep-localset
+WATCHDOG_ARMED pid=28761
+CANCELLED
+/home/owner/share/tmp/sdk_tools/m8-import-trial/keep-import
+WATCHDOG_ARMED pid=31943
+CANCELLED
+REBOOT_TOOLS
+/usr/bin/systemd-run
+/usr/bin/systemctl
+LIBRARY
+be719e56b94d71f9f895951d1407b92154d4c0604f784a3d4d95ee97e124f08d  /usr/lib/libfactory-interface-WW.so
+
+[exit:0]

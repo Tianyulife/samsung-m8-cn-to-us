@@ -1,0 +1,12 @@
+    f016: 447a         	add	r2, pc
+    f018: a907         	add	r1, sp, #0x1c
+    f01a: 9005         	str	r0, [sp, #0x14]
+    f01c: 2080         	movs	r0, #0x80
+    f01e: 9c05         	ldr	r4, [sp, #0x14]
+    f020: 58d3         	ldr	r3, [r2, r3]
+    f022: 681b         	ldr	r3, [r3]
+    f024: 9317         	str	r3, [sp, #0x5c]
+    f026: f04f 0300    	mov.w	r3, #0x0
+    f02a: f7fc ea18    	blx	0xb45c <system_info_get_value_string@plt> @ imm = #-0x3bd0
+    f02e: 2800         	cmp	r0, #0x0
+    f030: f040 80b5    	bne.w	0xf19e <_ZN21FWUpdateSymbolManager18getSWVersionStringEv+0x192> @ imm = #0x16a

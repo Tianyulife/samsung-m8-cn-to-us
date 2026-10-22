@@ -1,0 +1,11 @@
+{
+  "sha256": "030a5fd3f8aa132f12d75a83c678c6f351d6dcb5735f2d496634f6484ad0b533",
+  "size": 65536,
+  "changes_from_trial_baseline_offsets": [
+    "0x3412",
+    "0x3462"
+  ],
+  "bom": "LS32BM80BUCXXF",
+  "localset": 1,
+  "prevent_import": 0
+}

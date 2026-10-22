@@ -1,0 +1,5 @@
+((401, 0, 3, 1000000069, 6, byte 0x01, 'CHI_DTV', 'Local Set'), (1,))
+((76, 63), (1,))
+db/comss/countrycode, value = US (String)
+
+[exit:0]

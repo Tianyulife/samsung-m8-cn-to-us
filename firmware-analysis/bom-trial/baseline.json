@@ -1,0 +1,9 @@
+{
+  "size": 65536,
+  "sha256": "9288924e4b4f29ec0345bcf15fabd06bfc61eeee9fcd245bec661ba340035cdb",
+  "bom": "LS32BM80BUCXXF",
+  "bom_offset": "0xf321",
+  "localset": 1,
+  "prevent_import": 0,
+  "helper_sha256": "3f011c537a0e35ef6c1fe45dae78ce85927a82b42272e0bc701803aa4ee4acb4"
+}

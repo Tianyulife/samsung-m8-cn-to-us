@@ -1,0 +1,42 @@
+identity:
+uid=901(sdk) gid=901(sdk) groups=29(audio),44(video),201(display),901(sdk),1051(system_share),1901(log),6525(usb_device),10001(priv_externalstorage),10013(priv_tee_client),10014(priv_peripheralio),10212(priv_platform),10501(priv_camera),10502(priv_mediastorage),10503(priv_recorder),10704(priv_internet),10705(priv_network_get),10711(priv_tethering_admin),10901(priv_email),10903(priv_message_read),11103(priv_mapservice),11201(priv_appdebugging) context="System"
+5.4.77 armv7l
+
+capabilities:
+/usr/bin/dotnet = cap_setgid,cap_sys_admin+ei
+/usr/sbin/sdbd-tarlauncher = cap_setgid,cap_setuid+eip
+
+runtime:
+Unknown option --list-runtimes.
+Execute a .NET application or command.
+
+Usage: dotnet [options] [path-to-executable] [arguments]
+Usage: dotnet [command] [arguments]
+
+Options:
+-h, --help                         show this help message
+--clr-path <path>                  path to libcoreclr.so and runtime assemblies
+--tool-path <path>                 path to the tool installation directory
+--additionalprobingpath <path>     path containing assemblies to probe for
+--globalizationinvariant           run in globalization invariant mode
+
+Commands:
+counters       monitor or collect performance counters
+dump           capture or analyze a coredump
+gcdump         capture a heapdump
+trace          collect or convert a diagnostic event trace
+stack          reports the managed stacks
+
+
+components:
+crw-rw-rw- 1 root root 237, 0 2026-10-21 20:37 /dev/sdp_pqe_fdet
+      --to-command=COMMAND   pipe extracted files to another program
+
+runtime directory:
+2.0.0
+2.1.0
+2.1.1
+2.1.4
+3.0.0
+3.1.3
+/usr/share/dotnet/shared/Microsoft.NETCore.App/3.1.3

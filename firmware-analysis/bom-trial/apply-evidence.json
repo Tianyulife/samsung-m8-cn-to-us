@@ -1,0 +1,24 @@
+{
+  "model": "LS32BM80BUCXXF",
+  "host": "192.168.100.104",
+  "runtime": "3.1",
+  "authenticated": true,
+  "uid": 0,
+  "euid": 0,
+  "gid": 0,
+  "egid": 0,
+  "cap_eff": "0000003fffffffff",
+  "smack": "User",
+  "preflight_capabilities": "/usr/bin/dotnet = cap_setgid,cap_sys_admin+ei\n/usr/sbin/sdbd-tarlauncher = cap_setgid,cap_setuid+eip",
+  "commands": [
+    {
+      "command": "cat /home/owner/share/tmp/sdk_tools/m8-bom-trial/apply.sh | /bin/bash",
+      "exit_code": 127,
+      "timed_out": false,
+      "stdout": "FACTORY_MODEL rc=1 value=957\nBEFORE=LS32BM80BUCXXF\nWRITE rc=1 target=LS32BM80BUCXXF\nBOM=LS32BM80BUCXXF\nSHORT_MODEL=M80B\nFACTORY_MODEL rc=1 value=957\nLOCAL_SET rc=1 value=1\nPREVENT_IMPORT rc=1 value=0\nBACKUP_SHA256=9288924e4b4f29ec0345bcf15fabd06bfc61eeee9fcd245bec661ba340035cdb\nBOM=LS32BM80BUCXXF\nSHORT_MODEL=M80B\nFACTORY_MODEL rc=1 value=957\nLOCAL_SET rc=1 value=1\nPREVENT_IMPORT rc=1 value=0\n",
+      "stderr": "/bin/bash: line 10: cmp: command not found\n"
+    }
+  ],
+  "system_files_unchanged": true,
+  "staging_cleaned": true
+}

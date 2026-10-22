@@ -1,0 +1,1 @@
+["systemctl stop m8-reboot-verification.timer m8-reboot-verification.service; systemctl is-active m8-reboot-verification.timer; systemctl status m8-reboot-verification.service --no-pager; systemctl list-jobs --no-pager"]

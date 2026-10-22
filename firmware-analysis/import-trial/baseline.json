@@ -1,0 +1,10 @@
+{
+  "client_date": "2026-10-22",
+  "localset_global_enum": 1,
+  "localset_storage": 1,
+  "preventing_import": 13,
+  "country": "US",
+  "trial_target_preventing_import": 0,
+  "backup_sha256": "6145178ccf41f72c22d7106fc63bdc923b00192190309beeeb67073b04357127",
+  "auto_restore_seconds": 600
+}

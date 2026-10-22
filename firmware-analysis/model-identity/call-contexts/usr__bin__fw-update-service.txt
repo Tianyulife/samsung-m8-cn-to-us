@@ -1,0 +1,12 @@
+    edc2: 447a         	add	r2, pc
+    edc4: a907         	add	r1, sp, #0x1c
+    edc6: 9005         	str	r0, [sp, #0x14]
+    edc8: 2080         	movs	r0, #0x80
+    edca: 9c05         	ldr	r4, [sp, #0x14]
+    edcc: 58d3         	ldr	r3, [r2, r3]
+    edce: 681b         	ldr	r3, [r3]
+    edd0: 9317         	str	r3, [sp, #0x5c]
+    edd2: f04f 0300    	mov.w	r3, #0x0
+    edd6: f7fc e896    	blx	0xaf04 <system_info_get_value_string@plt> @ imm = #-0x3ed4
+    edda: 2800         	cmp	r0, #0x0
+    eddc: f040 80b5    	bne.w	0xef4a <_ZN21FWUpdateSymbolManager18getSWVersionStringEv+0x192> @ imm = #0x16a

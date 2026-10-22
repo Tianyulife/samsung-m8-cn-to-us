@@ -1,0 +1,8 @@
+LocalSet uid194 rc=1 value=65
+PreventingImport uid761 rc=1 value=13
+LocalSet enum rc=1 value=65
+db/comss/countrycode, value = US (String)
+ce35a4fa581996ecd22e67568b89f3b97c443a11c14eb778dc18714c4e23321e  /usr/lib/libfactory-interface-WW.so
+a04005972762bd198beee5058ce901414e9ec7931c913c0ca52cb50401c687cc  /home/owner/share/tmp/sdk_tools/m8-localset-trial/LocalSetTrial.dll
+
+[exit:0]

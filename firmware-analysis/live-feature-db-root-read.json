@@ -1,0 +1,31 @@
+{
+  "model": "LS32BM80BUCXXF",
+  "host": "192.168.100.104",
+  "runtime": "3.1",
+  "authenticated": true,
+  "uid": 0,
+  "euid": 0,
+  "gid": 0,
+  "egid": 0,
+  "cap_eff": "0000003fffffffff",
+  "smack": "User",
+  "preflight_capabilities": "/usr/bin/dotnet = cap_setgid,cap_sys_admin+ei\n/usr/sbin/sdbd-tarlauncher = cap_setgid,cap_setuid+eip",
+  "commands": [
+    {
+      "command": "ls -l /opt/data/fconfig/fconfig.db; sqlite3 -readonly /opt/data/fconfig/fconfig.db \"SELECT name,sql FROM sqlite_master WHERE type='table';\"",
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "-rw-r--r-- 1 owner root 684032 1970-01-01 08:00 /opt/data/fconfig/fconfig.db\nfc_table|CREATE TABLE fc_table (key varchar(255) not null PRIMARY KEY, type varchar(255) not null, \"0\" varchar(255) not null, \"1\" varchar(255) not null, \"2\" varchar(255) not null, \"3\" varchar(255) not null, \"4\" varchar(255) not null, \"6\" varchar(255) not null, \"7\" varchar(255) not null, \"8\" varchar(255) not null, \"9\" varchar(255) not null, \"10\" varchar(255) not null, \"11\" varchar(255) not null, \"12\" varchar(255) not null, \"13\" varchar(255) not null, \"14\" varchar(255) not null, \"15\" varchar(255) not null, \"16\" varchar(255) not null, \"17\" varchar(255) not null, \"18\" varchar(255) not null, \"19\" varchar(255) not null, \"20\" varchar(255) not null, \"21\" varchar(255) not null, \"23\" varchar(255) not null, \"24\" varchar(255) not null, \"25\" varchar(255) not null, \"26\" varchar(255) not null, \"27\" varchar(255) not null, \"28\" varchar(255) not null, \"29\" varchar(255) not null, \"30\" varchar(255) not null, \"31\" varchar(255) not null, \"32\" varchar(255) not null, \"33\" varchar(255) not null, \"34\" varchar(255) not null, \"35\" varchar(255) not null, \"36\" varchar(255) not null, \"37\" varchar(255) not null, \"38\" varchar(255) not null, \"39\" varchar(255) not null, \"40\" varchar(255) not null, \"41\" varchar(255) not null, \"42\" varchar(255) not null, \"43\" varchar(255) not null, \"44\" varchar(255) not null, \"45\" varchar(255) not null, \"46\" varchar(255) not null, \"47\" varchar(255) not null, \"48\" varchar(255) not null, \"49\" varchar(255) not null, \"50\" varchar(255) not null, \"51\" varchar(255) not null, \"52\" varchar(255) not null, \"53\" varchar(255) not null, \"54\" varchar(255) not null, \"55\" varchar(255) not null, \"56\" varchar(255) not null, \"57\" varchar(255) not null, \"58\" varchar(255) not null, \"59\" varchar(255) not null, \"60\" varchar(255) not null, \"61\" varchar(255) not null, \"62\" varchar(255) not null, \"63\" varchar(255) not null, \"64\" varchar(255) not null, \"65\" varchar(255) not null, \"66\" varchar(255) not null, \"67\" varchar(255) not null, \"69\" varchar(255) not null, \"70\" varchar(255) not null, \"71\" varchar(255) not null, \"72\" varchar(255) not null, \"73\" varchar(255) not null, \"74\" varchar(255) not null, \"75\" varchar(255) not null, \"76\" varchar(255) not null, \"95\" varchar(255) not null, \"96\" varchar(255) not null, \"97\" varchar(255) not null)\nfixed|CREATE TABLE fixed (key varchar(255) not null PRIMARY KEY)\n",
+      "stderr": ""
+    },
+    {
+      "command": "sqlite3 -readonly /opt/data/fconfig/fconfig.db \"SELECT key,type,\\\"0\\\",\\\"65\\\" FROM fc_table WHERE key LIKE '%use_china_server%' OR key='com.samsung/featureconf/product.product_type'; SELECT key FROM fixed WHERE key LIKE '%use_china_server%';\"; vconftool get db/comss/countrycode",
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "com.samsung/featureconf/product.product_type|Int|0|0\ncom.samsung/featureconf/pdss.use_china_server|Boolean|false|true\ncom.samsung/featureconf/was.use_china_server|Boolean|false|true\ncom.samsung/featureconf/account.use_china_server|Boolean|false|true\ncom.samsung/featureconf/homedatacontrolservice.use_china_server|Boolean|false|true\ncom.samsung/featureconf/security.fkp.use_china_server|Boolean|false|true\ndb/comss/countrycode, value = CN (String)\n",
+      "stderr": ""
+    }
+  ],
+  "system_files_unchanged": true,
+  "staging_cleaned": true
+}

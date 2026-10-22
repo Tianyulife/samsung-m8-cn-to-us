@@ -1,0 +1,58 @@
+# Local runtimes, third-party checkouts and build output
+.DS_Store
+.venv/
+__pycache__/
+*.pyc
+obj/
+out/
+bin/
+/AeroTizen/
+/root-research/
+/root-payloads31/
+/firmware-tools/unixtract-src/
+/firmware-tools/vdfs-unpack/
+
+# Official firmware packages, extracted images and vendor binaries
+/firmware-analysis/downloads/
+/firmware-analysis/CN-1651.1/
+/firmware-analysis/US-1720.7/
+/region-inspector/comss
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.xz
+*.bin
+*.dll
+*.pdb
+*.so
+*.so.*
+*.html
+
+# Device-specific raw storage, configuration databases and backup payloads
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.log
+*-readback.txt
+/firmware-analysis/**/*backup*evidence*.json
+/region-research-queue/result-*.json
+/apps-before-aerotizen.txt
+
+# Credentials, certificates and local environment files
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Raw native factory records (text summaries are tracked separately)
+/firmware-analysis/factory-research/live-factory-type.txt
+/firmware-analysis/factory-research/live-filter-property.txt
+/firmware-analysis/factory-research/live-native-read.txt
+/region-research-queue/STOP

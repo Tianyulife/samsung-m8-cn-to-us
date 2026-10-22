@@ -1,0 +1,52 @@
+{
+  "model": "LS32BM80BUCXXF",
+  "host": "192.168.100.104",
+  "runtime": "3.1",
+  "authenticated": true,
+  "uid": 0,
+  "euid": 0,
+  "gid": 0,
+  "egid": 0,
+  "cap_eff": "0000003fffffffff",
+  "smack": "User",
+  "preflight_capabilities": "/usr/bin/dotnet = cap_setgid,cap_sys_admin+ei\n/usr/sbin/sdbd-tarlauncher = cap_setgid,cap_setuid+eip",
+  "commands": [
+    {
+      "command": "id; command -v vconftool; command -v sqlite3; command -v dbus-send; command -v gdbus; command -v strings",
+      "exit_code": 1,
+      "timed_out": false,
+      "stdout": "uid=0(owner) gid=0(root) groups=0(root),29(audio),44(video),201(display),1901(log),6509(app_logging),6525(usb_device),10001(priv_externalstorage),10002(priv_externalstorage_appdata),10013(priv_tee_client),10014(priv_peripheralio),10212(priv_platform),10501(priv_camera),10502(priv_mediastorage),10503(priv_recorder),10704(priv_internet),10705(priv_network_get),10711(priv_tethering_admin),10901(priv_email),10903(priv_message_read),11103(priv_mapservice),11201(priv_appdebugging) context=\"User\"\n/usr/bin/vconftool\n/usr/bin/sqlite3\n/usr/bin/dbus-send\n/usr/bin/gdbus\n",
+      "stderr": ""
+    },
+    {
+      "command": "ls -ld /opt/etc /opt/dbspace /mnt/systemrw /mtd_rwarea; ls /opt/etc; ls /mnt/systemrw",
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "drwxr-xr-x 1 owner root          6 1970-01-01 08:00 /mnt/systemrw\ndrwxrwxr-x 1 owner system_share 68 2024-11-17 14:51 /opt/dbspace\ndrwxrwxrwx 1 owner system_share 25 1970-01-01 08:00 /opt/etc\ndisable_dlogutil\ndlog.conf\ndotnet_flag.ini\nduid-gadget\ndump.d\nenc_private_key.pem\nfkp\nget_top_process.sh\nHyperUART_IP_Addr\nira_encrypt.sh\nira_vlog_dump_for_external.sh\nlocaltime\nmultimedia\noqckeydecrypt.sh\np2p\nparseinfo.sh\npasswd\npublic_key.pem\nresolv.conf\nshadow\nskel\nssl\nssp\ntizenid\ndummy\nlost+found\norg.tizen.tv.swu\nstoraged_notify\ntvs-chms\ntvs-iss\n",
+      "stderr": "ls: cannot access /mtd_rwarea: No such file or directory\n"
+    },
+    {
+      "command": "ls /opt/dbspace | head -100; ls /usr/bin/*vconf* /usr/bin/*config* /usr/bin/*factory* 2>/dev/null",
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "201\n5001\nmtp\nuser\n/usr/bin/armv7l-tizen-linux-gnueabi-pkg-config\n/usr/bin/csf_dbus_config.xml\n/usr/bin/efl_config\n/usr/bin/factory-api-post-ww.sh\n/usr/bin/factory-init\n/usr/bin/factory-init-pba\n/usr/bin/factory-init.sh\n/usr/bin/factory-pba.sh\n/usr/bin/factory-volatile-buxton-creator-lfdoption.sh\n/usr/bin/factory-volatile-buxton-creator.sh\n/usr/bin/fconfigd\n/usr/bin/feature-config-app\n/usr/bin/icu-config\n/usr/bin/kfactoryd\n/usr/bin/kfactoryd.sh\n/usr/bin/pkg-config\n/usr/bin/taglib-config\n/usr/bin/vconftool\n",
+      "stderr": ""
+    },
+    {
+      "command": "find /opt/etc /mnt/systemrw -maxdepth 2 -type f 2>/dev/null | head -150",
+      "exit_code": 0,
+      "timed_out": false,
+      "stdout": "/opt/etc/.pwd.lock\n/opt/etc/HyperUART_IP_Addr\n/opt/etc/disable_dlogutil\n/opt/etc/dlog.conf\n/opt/etc/dotnet_flag.ini\n/opt/etc/duid-gadget\n/opt/etc/enc_private_key.pem\n/opt/etc/get_top_process.sh\n/opt/etc/ira_encrypt.sh\n/opt/etc/ira_vlog_dump_for_external.sh\n/opt/etc/oqckeydecrypt.sh\n/opt/etc/p2p/p2p_supp.conf\n/opt/etc/parseinfo.sh\n/opt/etc/passwd\n/opt/etc/public_key.pem\n/opt/etc/resolv.conf\n/opt/etc/shadow\n/opt/etc/ssp/com.samsung.tv.AccountNudgeService.dat\n/opt/etc/ssp/com.samsung.tv.AccountNudgeService.dat.sign\n/opt/etc/ssp/com.samsung.tv.CSAccount.dat\n/opt/etc/ssp/com.samsung.tv.CSAccount.dat.sign\n/opt/etc/ssp/com.samsung.tv.tencent-voice-chrome.dat\n/opt/etc/ssp/com.samsung.tv.tencent-voice-chrome.dat.sign\n/opt/etc/ssp/org.tizen.sso-profile.dat\n/opt/etc/ssp/org.tizen.sso-profile.dat.sign\n/opt/etc/ssp/org.tizen.sso.dat\n/opt/etc/ssp/org.tizen.sso.dat.sign\n/opt/etc/ssp/org.tizen.ssoservice.dat\n/opt/etc/ssp/org.tizen.ssoservice.dat.sign\n/opt/etc/ssp/org.tizen.voice-app.dat\n/opt/etc/ssp/org.tizen.voice-app.dat.sign\n/opt/etc/ssp/org.tizen.voice-onboarding.dat\n/opt/etc/ssp/org.tizen.voice-onboarding.dat.sign\n/opt/etc/ssp/org.tizen.wizard.dat\n/opt/etc/ssp/org.tizen.wizard.dat.sign\n/opt/etc/tizenid\n/mnt/systemrw/dummy\n/mnt/systemrw/storaged_notify\n",
+      "stderr": ""
+    },
+    {
+      "command": "ls /usr/lib/*product* /usr/lib/*vconf* /usr/lib/*system*setting* /usr/lib/*smarthub* 2>/dev/null",
+      "exit_code": 2,
+      "timed_out": false,
+      "stdout": "/usr/lib/libcapi-system-system-settings.so.0\n/usr/lib/libcapi-system-system-settings.so.0.0.6\n/usr/lib/libep-vconf-internal-keys-signage.so.0\n/usr/lib/libep-vconf-internal-keys-signage.so.0.1.230\n/usr/lib/libsmarthubconnectiontest-debugmenu.so\n/usr/lib/libsystem-settings-util.so.0.1.0\n/usr/lib/libsystem-settings-util.so.1\n/usr/lib/libvconf-internal-keys-tv.so.0\n/usr/lib/libvconf-internal-keys-tv.so.0.1.232\n/usr/lib/libvconf.so.0\n/usr/lib/libvconf.so.0.3.1\n",
+      "stderr": ""
+    }
+  ],
+  "system_files_unchanged": true,
+  "staging_cleaned": true
+}

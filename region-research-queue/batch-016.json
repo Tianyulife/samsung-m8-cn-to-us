@@ -1,0 +1,1 @@
+["rm -rf /run/m8-region-info-20261021; vconftool get db/comss/countrycode"]

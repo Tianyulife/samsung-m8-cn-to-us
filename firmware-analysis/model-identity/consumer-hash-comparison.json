@@ -1,0 +1,47 @@
+[
+  {
+    "file": "/usr/apps/comss/bin/comss",
+    "sha256": "3cdcacd0f193daf9ddc2a3c6db8230042acdcce5f953656c6959d732b9099c1b",
+    "matches_official_1720_7": true
+  },
+  {
+    "file": "/usr/apps/org.tizen.ssoservice/bin/ssoservice",
+    "sha256": "984389f3ad329a4f5a51dd4860b2fbdbef6b47e8265a742ac27e281130c080ab",
+    "matches_official_1720_7": true
+  },
+  {
+    "file": "/usr/lib/libiotcon.so.0.4.0",
+    "sha256": "1f15192037e2df775c3743831b3851dfd7b91371bf36511175b5f1c5743e9ed7",
+    "matches_official_1720_7": true
+  },
+  {
+    "file": "/usr/lib/libsystem-info-external-plugin.so",
+    "sha256": "6aa9264acd2583aa86ba20342417153dd38a64cd012216b2a4edd862c9c6ca89",
+    "matches_official_1720_7": true
+  },
+  {
+    "file": "/usr/bin/fconfigd",
+    "sha256": "37a44a8101604e5f67e302373b13853c0265d9cab9d87e433ad1876ee17c9ac0",
+    "matches_official_1720_7": true
+  },
+  {
+    "file": "/usr/bin/fw-update-service",
+    "sha256": "75744952330332004f3ebda9facaf0139dea0457452abfc7641432318db8c5a8",
+    "matches_official_1720_7": true
+  },
+  {
+    "file": "/usr/bin/fw-usb-update-service",
+    "sha256": "d7b0f59822248680437a1113a9cb2d9f4ae0e696d06b04df3d24e285649df3d8",
+    "matches_official_1720_7": true
+  },
+  {
+    "file": "/usr/bin/emps/empPepperPlugins/productinfo/libproductinfo.so",
+    "sha256": "b2cf40e083d39a83be3291de80c4e3794479c6b01f33cdc06b03d3f87cf0c3bf",
+    "matches_official_1720_7": true
+  },
+  {
+    "file": "/usr/apps/org.tizen.factory/bin/factory",
+    "sha256": "3418c90f2cd485c613166db89dcb3a52c46bbd84c9bc0e2ee5512fc7bd87c75f",
+    "matches_official_1720_7": true
+  }
+]
